@@ -1,0 +1,4 @@
+copy marketing.clients(active, comment, rating, last_name, first_name, middle_name, age, orders_count, first_order_date, last_order_date) from '/Users/tatanamgtu/bmstu/db_5sem/scripts/clients.csv' delimiter ';' csv header;
+copy marketing.coupons(active, description, name, source, max_discount, min_price, date_start, date_end) from '/Users/tatanamgtu/bmstu/db_5sem/scripts/coupons.csv' delimiter ';' csv header;
+copy marketing.promocodes(coupon_id, code, price, "limit", count, email, company, for_first_order) from '/Users/tatanamgtu/bmstu/db_5sem/scripts/promocodes.csv' delimiter ';' csv header;
+copy marketing.client_promocode_usages(promocode_id, client_id, added_at, order_price, order_discount) from '/Users/tatanamgtu/bmstu/db_5sem/scripts/client_promocode_usages.csv' delimiter ';' csv header;
